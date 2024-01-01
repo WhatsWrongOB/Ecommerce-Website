@@ -1,6 +1,6 @@
 import axios from "axios";
 import ProductReducer from "../Reducers/ProductReducer";
-import React, { createContext, useEffect, useState, useReducer, useContext } from "react";
+import React, { createContext, useEffect, useReducer, useContext } from "react";
 
 const AppContext = createContext();
 

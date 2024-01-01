@@ -10,9 +10,8 @@ const Slider = () => {
 
             {
                 Data.map((item) => (
-                    <Carousel.Item>
+                    <Carousel.Item key={item.id}>
                         <img
-                            key={item.id}
                             className="slider"
                             src={item.img}
                             alt="slides"

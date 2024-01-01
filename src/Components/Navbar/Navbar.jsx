@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaShoppingCart, FaSignInAlt, FaUser } from 'react-icons/fa'
+import { FaShoppingCart, FaSignInAlt, FaUser, FaSearch } from 'react-icons/fa'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -22,10 +22,12 @@ const Navbar = () => {
             <div className="my_logo">ObStore</div>
             <ul className="nav_menu">
                 <li><Link to='/' className='link'>Home</Link></li>
-                <li><Link to='/about' className='link'>About</Link></li>
                 <li><Link to='/products' className='link'>Products</Link></li>
                 <li><Link to='/contact' className='link'>Contact</Link></li>
-                <li><Link to='/cart' className='link cart_icon'><FaShoppingCart  size={23} /></Link></li>
+                <li><Link to='/search' className='link search_icon'>
+                    <FaSearch size={22} />
+                </Link></li>
+                <li><Link to='/cart' className='link cart_icon'><FaShoppingCart size={23} /></Link></li>
                 {
                     logIn ? (
                         <li>

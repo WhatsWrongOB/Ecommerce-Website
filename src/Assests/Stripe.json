@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "url": "https://icms-image.slatic.net/images/ims-web/1440c427-d3fe-49f7-aa90-09c8eb0b84ea.png",
+        "category": "Mart"
+    },
+    {
+        "id": 2,
+        "url": "https://icms-image.slatic.net/images/ims-web/4f250051-aac7-46bd-9bea-c5b836dea844.png",
+        "category": "Fashion"
+    },
+    {
+        "id": 3,
+        "url": "https://icms-image.slatic.net/images/ims-web/0ed92f69-d596-458b-bcd6-8d2bb69ef911.png",
+        "category": "Beauty"
+    },
+    {
+        "id": 4,
+        "url": "https://icms-image.slatic.net/images/ims-web/d85f0ced-6459-455a-8504-150655bf948c.png",
+        "category": "Doctor"
+    },
+    {
+        "id": 5,
+        "url": "https://icms-image.slatic.net/images/ims-web/22354e5f-9d90-4e02-8ba8-95da0fe91af2.png",
+        "category": "Home Appliances"
+    },
+    {
+        "id": 6,
+        "url": "https://icms-image.slatic.net/images/ims-web/65cac097-8b76-41b9-8e41-e9927b7a072a.png",
+        "category": "Free  Delivery"
+    },
+    {
+        "id": 7,
+        "url": "https://icms-image.slatic.net/images/ims-web/5482e5a6-8a18-45dc-a368-179002f137f5.png",
+        "category": "New on OBStore"
+    },
+    {
+        "id": 8,
+        "url": "https://icms-image.slatic.net/images/ims-web/62624b46-f8ca-43b7-a5fa-1d31920a6eb5.png",
+        "category": "Flash Sale"
+    }
+]

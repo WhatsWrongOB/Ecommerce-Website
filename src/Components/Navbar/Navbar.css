@@ -18,7 +18,7 @@ li {
 .nav_menu {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     margin-top: 10px;
 }
 
@@ -34,7 +34,8 @@ li {
     background-color: #f07335;
 }
 
-.cart_icon:hover {
+.cart_icon:hover,
+.search_icon:hover {
     color: #f07335;
     background-color: white;
 }

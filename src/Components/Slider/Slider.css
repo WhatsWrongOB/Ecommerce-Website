@@ -1,5 +1,5 @@
-.slider{
-    height: 87vh;
-    width: 100vw;
-    position: relative;
+.slider {
+    width:100%;
+    height:60vh;
+    border-radius:15px ;
 }

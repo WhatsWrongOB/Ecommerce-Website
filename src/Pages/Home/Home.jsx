@@ -5,11 +5,16 @@ import Loader from '../../Components/Loader/Loader'
 import StripeCard from '../../Components/ProductCard/StripeCard'
 import { FaDocker, Fa500Px, FaAccessibleIcon, FaAdversal, FaAddressCard, FaAmazonPay, FaAccusoft, FaAdjust, FaAirbnb, FaSpotify, FaSdCard, FaBitbucket } from 'react-icons/fa'
 import { useProductContext } from '../../Context/Context'
-import Stripe from '../../Assests/Stripe.json'
+import Stripe from '../../Assests/Data/Stripe.json'
+import Category from '../../Assests/Data/Category.json'
+import CategoryCard from '../../Components/ProductCard/CategoryCard'
+import ProductCard from '../../Components/ProductCard/ProductCard'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-    const { isLoading } = useProductContext();
+    const { isLoading, featureProduct } = useProductContext();
+
     if (isLoading) {
         <Loader />
     }
@@ -45,6 +50,31 @@ const Home = () => {
                         {
                             Stripe.map((item) => (
                                 <StripeCard key={item.id} image={item.url} name={item.category} />
+                            ))
+                        }
+
+                    </div>
+                </div>
+                <div className="categories_container">
+                    <h1 className="categories_heading">Categories</h1>
+                    <div className="categories">
+                        {
+                            Category.map((elem, index) => (
+                                <CategoryCard key={index} name={elem.category} image={elem.url} />
+                            ))
+                        }
+
+
+                    </div>
+                </div>
+                <div className="feature_product_container">
+                    <div className="extra">
+                        <h1 className="feature_heading">Features</h1>
+                    </div>
+                    <div className="feature_product">
+                        {
+                            featureProduct.map((item) => (
+                                <ProductCard key={item.id} id={item.id} name={item.name} image={item.image} price={item.price} />
                             ))
                         }
 

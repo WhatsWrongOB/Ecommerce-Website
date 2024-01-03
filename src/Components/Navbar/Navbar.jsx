@@ -22,7 +22,6 @@ const Navbar = () => {
             <div className="my_logo">ObStore</div>
             <ul className="nav_menu">
                 <li><Link to='/' className='link'>Home</Link></li>
-                <li><Link to='/products' className='link'>Products</Link></li>
                 <li><Link to='/contact' className='link'>Contact</Link></li>
                 <li><Link to='/search' className='link search_icon'>
                     <FaSearch size={22} />

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "url": "https://static-01.daraz.pk/p/3e42eb13986d249107d767e891309590.jpg",
+        "category": "Wireless Earbuds"
+    },
+    {
+        "id": 2,
+        "url": "https://pk-live-21.slatic.net/kf/S955ed0817b9246c7a570fc332c1fd97at.jpg",
+        "category": "Studio Headphones"
+    },
+    {
+        "id": 3,
+        "url": "https://static-01.daraz.pk/p/0703f6cb3bc833351705422c6d922d2a.jpg",
+        "category": "Moisturizers"
+    },
+    {
+        "id": 4,
+        "url": "https://static-01.daraz.pk/p/f18a7f03b24a077b8c412065918cbf64.jpg",
+        "category": "Shampoo"
+    },
+    {
+        "id": 5,
+        "url": "https://static-01.daraz.pk/p/6dd67cd9070ee505096fe42f42b6ac1e.jpg",
+        "category": "Rechargable"
+    },
+    {
+        "id": 6,
+        "url": "https://static-01.daraz.pk/p/546ae79068eedfd8bac2c3e61d197e78.jpg",
+        "category": "Oil"
+    },
+    {
+        "id": 7,
+        "url": "https://static-01.daraz.pk/p/a3590be1e69a1c816e91b4b9907cb1cc.jpg",
+        "category": "Hair Accessories"
+    },
+    {
+        "id": 8,
+        "url": "https://static-01.daraz.pk/p/8a4e1f62b4f15e509bc76859e35c1cba.jpg",
+        "category": "Hats & Caps"
+    },
+    {
+        "id": 9,
+        "url": "https://static-01.daraz.pk/p/7734cc5c7ba6225c22aae5452e77cf8e.jpg",
+        "category": "Casual"
+    },
+    {
+        "id": 10,
+        "url": "https://static-01.daraz.pk/p/ff7e20092b7b35a8a4a93abb96b18bca.jpg",
+        "category": "Cleaning Tools"
+    },
+    {
+        "id": 11,
+        "url": "https://static-01.daraz.pk/p/e46465d41dc935f4983389f0f7ffd94c.jpg",
+        "category": "Wardorobe"
+    },
+    {
+        "id": 12,
+        "url": "https://static-01.daraz.pk/p/b18dd93bab1a0e3e6c6e080d1b6adedb.jpg",
+        "category": "Artificial Flowers"
+    },
+    {
+        "id": 13,
+        "url": "https://static-01.daraz.pk/p/2891c015b4a58de72cfd8f7621fd20d4.jpg",
+        "category": "Lightining"
+    },
+    {
+        "id": 14,
+        "url": "https://static-01.daraz.pk/p/58c9fce2bce2dd9214831ab1142e5b76.jpg",
+        "category": "Black Tea"
+    }
+]

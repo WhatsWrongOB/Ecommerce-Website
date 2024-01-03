@@ -7,7 +7,6 @@ const Home = lazy(() => import('./Pages/Home/Home'))
 const Search = lazy(() => import('./Pages/Search/Search'))
 const Contact = lazy(() => import('./Pages/Contact/Contact'))
 const Cart = lazy(() => import('./Pages/Cart/Cart'))
-const Product = lazy(() => import('./Pages/Products/Product'))
 const ProductDetails = lazy(() => import('./Pages/ProductDetails/ProductDetails'))
 
 
@@ -24,8 +23,7 @@ const App = () => {
           <Route exact path='/search' element={<Search />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/cart' element={<Cart />} />
-          <Route exact path='/products' element={<Product />} />
-          <Route exact path='/productDetails' element={<ProductDetails />} />
+          <Route exact path='/productDetails/:id' element={<ProductDetails />} />
           <Route exact path="*" element={<h1>404 Page Not Found</h1>} />
         </Routes>
       </Suspense>

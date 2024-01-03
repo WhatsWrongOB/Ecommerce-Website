@@ -50,7 +50,7 @@ li {
     border: none;
     border-radius: 7px;
     color: white;
-    background-color: #f07335;
+    background-color: orange;
     cursor: pointer;
     transition: all ease-in-out 0.2s
 }

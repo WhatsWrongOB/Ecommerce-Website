@@ -8,7 +8,6 @@ const ProductCard = ({ id, name, image, price }) => {
                 <img src={image} alt="feature_product" />
                 <p className="prpduct_para">{name}</p>
                 <p className="product_price">Rs {price} /-</p>
-                <button className="product_btn">Add To Cart</button>
         </Link>
     )
 }

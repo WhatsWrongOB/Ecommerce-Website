@@ -84,13 +84,4 @@
     color: orangered;
 }
 
-.product_btn{
-    padding: 8px 15px;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 7px;
-    color: white;
-    background-color: orange;
-    cursor: pointer;
-    transition: all ease-in-out 0.2s
-}
+

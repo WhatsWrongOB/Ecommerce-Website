@@ -42,6 +42,7 @@
 .details_view img {
     width: 85%;
     height: 17%;
+    cursor: pointer;
 }
 
 .inner_details_right {

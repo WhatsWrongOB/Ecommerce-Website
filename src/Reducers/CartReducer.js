@@ -1,8 +1,5 @@
-const initialState = {
-    cartItems: []
-}
 
-const cartReducer = (state = initialState, action) => {
+const cartReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_TO_CART':
             return {
@@ -15,9 +12,7 @@ const cartReducer = (state = initialState, action) => {
                 cartItems: state.cartItems.filter(task => task !== action.payload)
             }
         default:
-            return {
-                ...state
-            }
+            return state
     }
 }
 

@@ -9,14 +9,13 @@ import Stripe from '../../Assests/Data/Stripe.json'
 import Category from '../../Assests/Data/Category.json'
 import CategoryCard from '../../Components/ProductCard/CategoryCard'
 import ProductCard from '../../Components/ProductCard/ProductCard'
-import { Link } from 'react-router-dom'
 
 const Home = () => {
 
     const { isLoading, featureProduct } = useProductContext();
 
     if (isLoading) {
-        <Loader />
+        return <Loader />
     }
     else {
         return (

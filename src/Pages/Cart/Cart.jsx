@@ -3,10 +3,10 @@ import { useProductContext } from '../../Context/Context'
 
 const Cart = () => {
 
-  const { cart } = useProductContext
-  
+  const { cartItems } = useProductContext()
+  console.log(cartItems)
   return (
-    <div>Cart</div>
+    <div>{cartItems.name}</div>
   )
 }
 

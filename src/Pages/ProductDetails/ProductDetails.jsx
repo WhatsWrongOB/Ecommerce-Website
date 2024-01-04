@@ -16,14 +16,14 @@ const ProductDetails = () => {
 
   useEffect(() => {
     getSingleProduct(`${Apiurl}?id=${id}`)
-  }, [])
+  },[])
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [view, setView] = useState(image[0]);
 
   const increment = () => setCount(count + 1);
   const decrement = () => {
-    if (count > 0) {
+    if (count > 1) {
       setCount(count - 1);
     }
   }
@@ -69,9 +69,8 @@ const ProductDetails = () => {
             <p className="details_brand">Brand : {company}</p>
             <div className="details_count">
               <button className="decrement" onClick={decrement}>-</button>
-              <input type="text" className='details_quantity_count' value={count} />
+              <input type="text" className='details_quantity_count' value={count} onChange={() => setCount(count)} />
               <button className="increment" onClick={increment}>+</button>
-
             </div>
             <button className="details_cart" onClick={() => handleCart(singleProduct)}>Add to Cart</button>
           </div>

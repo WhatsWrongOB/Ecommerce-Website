@@ -17,8 +17,11 @@ const initialState = {
 };
 
 const initialCartState = {
-    cartItems: []
+    cartItems: [],
+    quantity: 1
 }
+
+console.log(initialCartState.quantity)
 
 const AppProvider = ({ children }) => {
 
@@ -64,14 +67,17 @@ const AppProvider = ({ children }) => {
     const handleCart = (product) => {
 
         alert('Added to cart successfully')
-        console.log(product)
         cartDispatch({ type: 'ADD_TO_CART', payload: product });
-        cartDispatch({ type: 'REMOVE_FROM_CART', payload: product.id });
-
 
     };
+
+    const removeFromCart = (product) => {
+        alert('Remove from cart successfully')
+        cartDispatch({ type: 'REMOVE_FROM_CART', payload: product.id });
+
+    }
     return (
-        <AppContext.Provider value={{ ...state, getSingleProduct, handleCart, ...cartState }}>
+        <AppContext.Provider value={{ ...state, getSingleProduct, handleCart, removeFromCart, ...cartState }}>
             {children}
         </AppContext.Provider>
     );

@@ -8,10 +8,17 @@ const CartCard = ({ product, name, price, stock, image }) => {
 
     const [count, setCount] = useState(quantity);
 
-    const increment = () => setCount(quantity + 1);
+    const increment = () => {
+        if (stock > count) {
+            setCount(count + 1)
+        }
+        else {
+            alert('Stock Unavailable')
+        }
+    };
     const decrement = () => {
-        if (quantity > 1) {
-            setCount(quantity - 1);
+        if (count > 1) {
+            setCount(count - 1);
         }
     }
 

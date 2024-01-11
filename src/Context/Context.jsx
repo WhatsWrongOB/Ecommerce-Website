@@ -5,7 +5,6 @@ import CartReducer from "../Reducers/CartReducer";
 
 const AppContext = createContext();
 
-
 const initialState = {
     isLoading: false,
     isError: false,
@@ -20,8 +19,6 @@ const initialCartState = {
     cartItems: [],
     quantity: 1
 }
-
-console.log(initialCartState.quantity)
 
 const AppProvider = ({ children }) => {
 
@@ -47,8 +44,7 @@ const AppProvider = ({ children }) => {
         fetchData();
     }, []);
 
-
-
+    
     const getSingleProduct = async (url) => {
         dispatch({ type: 'SET_SINGLE_LOADING' });
         try {

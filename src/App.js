@@ -7,9 +7,8 @@ const Home = lazy(() => import('./Pages/Home/Home'))
 const Search = lazy(() => import('./Pages/Search/Search'))
 const Contact = lazy(() => import('./Pages/Contact/Contact'))
 const Cart = lazy(() => import('./Pages/Cart/Cart'))
+const LogIn = lazy(() => import('./Pages/SignIn/LogIn'))
 const ProductDetails = lazy(() => import('./Pages/ProductDetails/ProductDetails'))
-
-
 
 
 const App = () => {
@@ -19,6 +18,7 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
+          <Route exact path='/login' element={<LogIn />} />
           <Route exact path='/' element={<Home />} />
           <Route exact path='/search' element={<Search />} />
           <Route exact path='/contact' element={<Contact />} />

@@ -56,6 +56,8 @@
 }
 .star{
     color: rgb(248, 213, 12);
+    display: flex;
+    margin: 10px 0px;
 }
 
 .details_price {
@@ -65,7 +67,6 @@
 .details_count {
     margin-bottom: 30px;
 }
-
 
 
 .decrement,

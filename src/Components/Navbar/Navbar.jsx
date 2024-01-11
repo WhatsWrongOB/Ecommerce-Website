@@ -1,45 +1,31 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaShoppingCart, FaSignInAlt, FaUser, FaSearch } from 'react-icons/fa'
+import { FaShoppingCart, FaSearch } from 'react-icons/fa'
 import './Navbar.css'
 
 const Navbar = () => {
 
-    const [logIn, setLogIn] = useState(false)
-
-    const handleLogIn = () => {
-        setLogIn(true)
-        alert('Login Successfully')
-
-    }
-
-    const handleLogOut = () => {
-        setLogIn(false)
-    }
 
     return (
-        <nav className="nav">
+        <nav className="navigation">
             <div className="my_logo">ObStore</div>
-            <ul className="nav_menu">
+            <ul className="navigation_menu">
                 <li><Link to='/' className='link'>Home</Link></li>
                 <li><Link to='/contact' className='link'>Contact</Link></li>
                 <li><Link to='/search' className='link search_icon'>
                     <FaSearch size={22} />
                 </Link></li>
                 <li><Link to='/cart' className='link cart_icon'><FaShoppingCart size={23} /></Link></li>
-                {
-                    logIn ? (
-                        <li>
+                {/*   <li>
                             <FaSignInAlt />
                             <button className='logout btn' onClick={handleLogOut}>LogOut</button>
-                        </li>
-                    ) : (
-                        <li>
-                            <FaUser />
-                            <button className='login btn' onClick={handleLogIn}>Login</button>
-                        </li>
-                    )
-                }
+                        </li> */}
+                <li>
+                    <Link to='/login'>
+                        <button className='login btn'>SignIn</button>
+                    </Link>
+                </li>
+
 
 
             </ul>

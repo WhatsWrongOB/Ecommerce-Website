@@ -11,12 +11,12 @@ const ProductDetails = () => {
 
   const Apiurl = 'https://api.pujakaitem.com/api/products'
   const { id } = useParams();
-  const { isSingleLoading, getSingleProduct, singleProduct, handleCart } = useProductContext();
+  const { isSingleLoading, getSingleProduct, singleProduct, handleCart, cartItems } = useProductContext();
   const { name, company, price, description, reviews, stock, stars, image = [{ url: '' }] } = singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${Apiurl}?id=${id}`)
-  },[])
+  }, [])
 
   const [count, setCount] = useState(1);
   const [view, setView] = useState(image[0]);

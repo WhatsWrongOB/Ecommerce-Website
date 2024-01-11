@@ -16,7 +16,7 @@ const Cart = () => {
       <h3 className="cart_heading">Shopping Cart</h3>
       <hr />
       {cartItems.length === 0 ? (
-        <h3 className='no_item'>No items in <AiOutlineShoppingCart/></h3>
+        <h3 className='no_item'>No items in <AiOutlineShoppingCart /></h3>
       ) : (
         <>
           {
